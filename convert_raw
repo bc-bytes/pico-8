@@ -1,0 +1,13 @@
+ints = []
+with open("source", "r") as filestream:
+  new_file = open("output.p8.png", mode="wb")
+  for line in filestream:
+    currentline = line.split(",")
+    for value in currentline:
+      if (value.isdigit()):
+        int_val = int(value)
+        ints.append(int_val)
+
+  output = bytearray(ints)
+  new_file.write(output)
+  new_file.close()
