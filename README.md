@@ -12,4 +12,4 @@ This routine will convert raw integer cart data from an embedded pico-8 HTML pro
 7. Near the top of the resulting page, look for a variable called "cartdat" and copy the value assigned to the variable. The value of the variable will be a sequence on integers, separated by commas enclosed in square brackets.
 8. Save the contents of the clipboard into a file called "source".
 9. Run the "convert_raw.py" in the same directory as the "source" file.
-10. A new file file will be generated "output.p8". This is the pico-8 cart, and can now be loaded directly into pico-8.
+10. A new file will be generated "output.p8". This is the pico-8 cart, and can now be loaded directly into pico-8.
